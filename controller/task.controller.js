@@ -1,6 +1,7 @@
 const TaskService = require("../services/task.services");
 
 class TaskController {
+    // Crear una nueva tarea
     async createTask(req, res) {
         const { name, description } = req.body;
 
@@ -20,6 +21,7 @@ class TaskController {
         }
     }
 
+    // Obtener todas las tareas
     async getAllTasks(req, res) {
         try {
             const tasks = await TaskService.getAllTasks();
@@ -29,6 +31,7 @@ class TaskController {
         }
     }
 
+    // Obtener una tarea por ID
     async getTaskById(req, res) {
         try {
             const task = await TaskService.getTaskById(req.params.id);
@@ -41,25 +44,26 @@ class TaskController {
         }
     }
 
+    // Actualizar una tarea por ID
     async updateTask(req, res) {
-        const { name, description } = req.body;
-
-        // Verificar si los campos 'name' y 'description' están presentes
-        if (!name || !description) {
-            return res.status(400).json({ error: "Todos los campos son requeridos" });
-        }
-
+        const { id } = req.params;
+        const { name, description, status } = req.body;
+      
         try {
-            const updatedTask = await TaskService.updateTask(req.params.id, { name, description }); // Solo pasa name y description
+            // Se actualiza solo los campos proporcionados, en este caso name, description y status
+            const updatedTask = await TaskService.updateTask(id, { name, description, status });
+      
             if (!updatedTask) {
-                return res.status(404).json({ error: "Tarea no encontrada" });
+                return res.status(404).json({ message: 'Tarea no encontrada' });
             }
-            res.json(updatedTask);
+      
+            res.status(200).json(updatedTask);
         } catch (error) {
-            res.status(500).json({ error: "Error al actualizar la tarea" });
+            res.status(500).json({ message: 'Error al actualizar la tarea', error });
         }
     }
 
+    // Eliminar una tarea por ID
     async deleteTask(req, res) {
         try {
             const deletedTask = await TaskService.deleteTask(req.params.id);
