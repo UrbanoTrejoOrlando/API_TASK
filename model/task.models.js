@@ -9,6 +9,10 @@ const taskSchema = new mongoose.Schema({
     description: {
         type: String,
         required: [true, 'La descripción de la tarea es obligatoria']
+    },
+    status: {
+        type: Boolean,
+        default: false // ← todas las tareas nuevas serán "pendientes"
     }
 });
 
