@@ -25,4 +25,9 @@ git clone git@github.com:UrbanoTrejoOrlando/API_TASK.git
 ```bash
 cd API_TASK
 ```
-3.- 
+3.- Instala las dependencias
+```bash
+npm install
+```
+4.- Inicia el servidor
+
