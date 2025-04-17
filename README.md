@@ -59,8 +59,7 @@ npm start
 ```bash
 {
   "title": "Aprender Node.js",
-  "description": "Estudiar los fundamentos de Node.js y Express",
-  "completed": false
+  "description": "Estudiar los fundamentos de Node.js y Express"
 }
 ```
 ### 🔸 Obtener todas las tareas (GET `/task`)
