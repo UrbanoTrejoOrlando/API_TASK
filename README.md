@@ -66,4 +66,4 @@ npm start
 ### 🔸 Obtener todas las tareas (GET `/task`)
 - **URL:** `http://localhost:3000/task`
 - **Método:** GET
-- 
+- **Respuesta esperada:**
