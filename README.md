@@ -9,3 +9,8 @@
 - **UPDATE**: Permite modificar los detalles de una tarea existente. 
 - **DELETE**: Elimina una tarea por su ID.  
 
+## Tecnologías utilizadas
+- Node.js  
+- Express.js  
+- MongoDB  
+- Mongoose
