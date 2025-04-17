@@ -16,8 +16,13 @@
 - Mongoose
 
 ## Instalación
-```bash
-1.- Clonar el repositorio
-git clone git@github.com:UrbanoTrejoOrlando/API_TASK.git
 
+1.- Clonar el repositorio
+```bash
+git clone git@github.com:UrbanoTrejoOrlando/API_TASK.git
+```
 2.- Navegar al directorio del proyecto
+```bash
+cd API_TASK
+```
+3.- 
