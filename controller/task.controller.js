@@ -36,6 +36,7 @@ class TaskController {
         try {
             const task = await TaskService.getTaskById(req.params.id);
             if (!task) {
+                // Validar que la tarea este encontrada
                 return res.status(404).json({ error: "Tarea no encontrada" });
             }
             res.json(task);
