@@ -14,3 +14,10 @@
 - Express.js  
 - MongoDB  
 - Mongoose
+
+## Instalación
+```bash
+1.- Clonar el repositorio
+git clone git@github.com:UrbanoTrejoOrlando/API_TASK.git
+
+2.- Navegar al directorio del proyecto
