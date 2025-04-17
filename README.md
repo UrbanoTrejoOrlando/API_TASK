@@ -48,3 +48,11 @@ npm start
 | GET    | `/task/:id` | Obtener una tarea específica   |
 | PUT    | `/task/:id` | Actualizar una tarea existente |
 | DELETE | `/task/:id` | Eliminar una tarea             |
+
+## Ejemplos de uso en Postman 
+### 🔸 Crear una nueva tarea (POST `/task`)
+
+- **URL:** `http://localhost:3000/task`
+- **Método:** POST
+- **Body (JSON):**
+
