@@ -63,4 +63,4 @@ npm start
   "completed": false
 }
 ```
-## Ejemplo
+### 🔸 Obtener todas las tareas (GET `/task`)
