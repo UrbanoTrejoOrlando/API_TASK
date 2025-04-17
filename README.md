@@ -43,8 +43,8 @@ npm start
 
 | Método | Ruta         | Descripción                    |
 |--------|--------------|--------------------------------|
-| POST   | `/tasks`     | Crear una nueva tarea          |
-| GET    | `/tasks`     | Obtener todas las tareas       |
-| GET    | `/tasks/:id` | Obtener una tarea específica   |
-| PUT    | `/tasks/:id` | Actualizar una tarea existente |
-| DELETE | `/tasks/:id` | Eliminar una tarea             |
+| POST   | `/task`     | Crear una nueva tarea          |
+| GET    | `/task`     | Obtener todas las tareas       |
+| GET    | `/task/:id` | Obtener una tarea específica   |
+| PUT    | `/task/:id` | Actualizar una tarea existente |
+| DELETE | `/task/:id` | Eliminar una tarea             |
