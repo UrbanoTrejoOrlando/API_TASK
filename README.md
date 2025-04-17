@@ -30,4 +30,11 @@ cd API_TASK
 npm install
 ```
 4.- Inicia el servidor
-
+- En **modo desarrollo**
+```bash
+npm run dev
+```
+- En **modo producción**
+```bash
+npm start
+```  
