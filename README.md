@@ -52,7 +52,7 @@ npm start
 ## Ejemplos de uso en Postman 
 ### 🔸 Crear una nueva tarea (POST `/task`)
 
-- **URL:** `http://localhost:3000/task`
+- **URL:** `http://localhost:3001/task`
 - **Método:** POST
 - **Body (JSON):**
 
@@ -62,7 +62,18 @@ npm start
   "description": "Estudiar los fundamentos de Node.js y Express"
 }
 ```
+- **Respuesta esperada**: 200 OK
+```bash
+{
+  "title": "Aprender Node.js",
+  "description": "Estudiar los fundamentos de Node.js y Express"
+  "status": false,
+  "_id": "680194e267845e2e373e3215",
+  "__v": 0
+}
+```
+
 ### 🔸 Obtener todas las tareas (GET `/task`)
-- **URL:** `http://localhost:3000/task`
+- **URL:** `http://localhost:3001/task`
 - **Método:** GET
 - **Respuesta esperada:**
