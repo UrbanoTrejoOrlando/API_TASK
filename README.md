@@ -56,3 +56,10 @@ npm start
 - **Método:** POST
 - **Body (JSON):**
 
+```json
+{
+  "title": "Aprender Node.js",
+  "description": "Estudiar los fundamentos de Node.js y Express",
+  "completed": false
+}
+```
