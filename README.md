@@ -109,6 +109,7 @@ npm start
     "__v": 0
   }
 ```
+
 ### 🔸 Actualizar una tarea (PUT `/task/:id`)
 - **URL:** `http://localhost:3001/task/680194e267845e2e373e3215`
 **Método:** PUT
@@ -127,4 +128,14 @@ npm start
     "status": true,
     "__v": 0
   }
+```
+### 🔸 Eliminar una tarea (DELETE `/task/:id`)
+- **URL:** `http://localhost:3001/task/680194e267845e2e373e3215`
+**Método:** DELETE
+- **Respuesta esperada: 200 OK**
+```json
+ {
+    "message": "Tarea eliminada"
+    
+ }
 ```
