@@ -95,16 +95,36 @@ npm start
   }
 ]
 ```
+
 ### 🔸 Obtener una tarea por el ID (GET `/task/:id`)
 - **URL:** `http://localhost:3001/task/680194e267845e2e373e3215`
 - **Método:** GET
+- **Respuesta esperada: 200 OK**
+```json
+  {
+    "_id": "680194e267845e2e373e3215",
+    "title": "Aprender Node.js",
+    "description": "Estudiar los fundamentos de Node.js y Express",
+    "status": false,
+    "__v": 0
+  }
+```
+### 🔸 Actualizar una tarea (PUT `/task/:id`)
+- **URL:** `http://localhost:3001/task/680194e267845e2e373e3215`
+**Método:** PUT
+- **Body (JSON):**
+```json
+{
+  "status": "true"
+}
+```
 - **Respuesta esperada: 200 OK**
 ```json
  {
     "_id": "680194e267845e2e373e3215",
     "title": "Aprender Node.js",
     "description": "Estudiar los fundamentos de Node.js y Express",
-    "status": false,
+    "status": true,
     "__v": 0
   }
 ```
