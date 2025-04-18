@@ -62,8 +62,8 @@ npm start
   "description": "Estudiar los fundamentos de Node.js y Express"
 }
 ```
-- **Respuesta esperada**: 200 OK
-```bash
+- **Respuesta esperada**: 201 Created
+```json
 {
   "title": "Aprender Node.js",
   "description": "Estudiar los fundamentos de Node.js y Express"
@@ -76,4 +76,22 @@ npm start
 ### 🔸 Obtener todas las tareas (GET `/task`)
 - **URL:** `http://localhost:3001/task`
 - **Método:** GET
-- **Respuesta esperada:**
+- **Respuesta esperada: 200 OK**
+```json
+[
+  {
+    "_id": "680194e267845e2e373e3215",
+    "title": "Aprender Node.js",
+    "description": "Estudiar los fundamentos de Node.js y Express",
+    "status": false,
+    "__v": 0
+  },
+  {
+    "_id": "680194e267845e2e373e3216",
+    "title": "Tarea 2",
+    "description": "Completar el README",
+    "status": true,
+    "__v": 0
+  }
+]
+```
