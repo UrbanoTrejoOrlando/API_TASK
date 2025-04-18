@@ -136,6 +136,5 @@ npm start
 ```json
  {
     "message": "Tarea eliminada"
-    
  }
 ```
