@@ -45,7 +45,7 @@ npm start
 |--------|--------------|--------------------------------|
 | POST   | `/task`     | Crear una nueva tarea          |
 | GET    | `/task`     | Obtener todas las tareas       |
-| GET    | `/task/:id` | Obtener una tarea específica   |
+| GET    | `/task/:id` | Obtener una tarea por el ID   |
 | PUT    | `/task/:id` | Actualizar una tarea existente |
 | DELETE | `/task/:id` | Eliminar una tarea             |
 
@@ -56,13 +56,13 @@ npm start
 - **Método:** POST
 - **Body (JSON):**
 
-```bash
+```json
 {
   "title": "Aprender Node.js",
   "description": "Estudiar los fundamentos de Node.js y Express"
 }
 ```
-- **Respuesta esperada**: 201 Created
+- **Respuesta esperada: 201 Created**
 ```json
 {
   "title": "Aprender Node.js",
@@ -94,4 +94,17 @@ npm start
     "__v": 0
   }
 ]
+```
+### 🔸 Obtener una tarea por el ID (GET `/task/:id`)
+- **URL:** `http://localhost:3001/task/680194e267845e2e373e3215`
+- **Método:** GET
+- **Respuesta esperada: 200 OK**
+```json
+ {
+    "_id": "680194e267845e2e373e3215",
+    "title": "Aprender Node.js",
+    "description": "Estudiar los fundamentos de Node.js y Express",
+    "status": false,
+    "__v": 0
+  }
 ```
